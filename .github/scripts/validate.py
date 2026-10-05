@@ -175,7 +175,7 @@ def main() -> int:
             for context in ("source", "installed"):
                 report = json.loads((BUILD / f"{prefix}-{context}.json").read_text())
                 checks[f"{prefix}_{context}_receipt_pass"] = report["result"] == "PASS" and all(report["checks"].values())
-        checks["author_and_version"] = receipt["author"] == "dhtfish98" and version == "0.1.0"
+        checks["author_and_version"] = receipt["author"] == "dhtfish98" and version == "0.1.1"
         checks["source_tree_has_no_build_products"] = not any(
             part in {"__pycache__", "dist", "build", ".venv"}
             for base in (SOURCE / "src", SOURCE / "tests") for file in base.rglob("*") for part in file.parts
