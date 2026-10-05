@@ -2,6 +2,6 @@
 
 from .gate import GateDecision, GateServer, SessionRegistry, UpgradeGate
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 __all__ = ["GateDecision", "GateServer", "SessionRegistry", "UpgradeGate", "__version__"]

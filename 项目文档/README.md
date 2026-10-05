@@ -1,4 +1,4 @@
-# WebSocketUpgradeOriginGate 0.1.1
+# WebSocketUpgradeOriginGate 0.1.2
 
 作者：dhtfish98。此项目独立实现**仅供本机研究**的 WebSocket HTTP/1.1 Upgrade 授权门：必须同时满足精确目标 `Host`、被允许的页面 `Origin` 和有效合成会话 Cookie。`Origin` 是浏览器跨来源约束，不是身份认证；非浏览器客户端可以自行填入 Origin，因此有效会话仍是独立必要条件。
 

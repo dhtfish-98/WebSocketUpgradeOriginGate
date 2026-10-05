@@ -94,7 +94,7 @@ def run() -> dict[str, object]:
         }
         return {
             "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-            "version": "0.1.1",
+            "version": "0.1.2",
             "environment": "A/B HTTP pages plus WebSocket services bound to 127.0.0.1 on ephemeral ports",
             "origins": {"A": pages.a_origin, "B": pages.b_origin},
             "synthetic_session_sha256": hashlib.sha256(valid.encode()).hexdigest(),
